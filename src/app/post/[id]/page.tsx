@@ -1,6 +1,10 @@
-import PostCard from "@/components/PostCard";
-import { Post } from "@/interfaces/post.interface";
+import { Suspense } from "react";
+
+import { CommentByPost } from "@/components/CommentByPost";
 import { getAllPosts, getPostById } from "@/lib";
+import { Loading } from "@/components/loading";
+import { Post } from "@/interfaces/post.interface";
+import { PostCard } from "@/components/PostCard";
   
 interface Props {
     params: {
@@ -12,7 +16,12 @@ const PostPage = async ({params}: Props) => {
   const post = await getPostById(params.id)
     
   return (
+    <>
       <PostCard post={post} key={post.id} />
+      <Suspense fallback={ <Loading />} >
+        <CommentByPost id={post.id}/>
+      </Suspense>
+    </>
   )
 }
 

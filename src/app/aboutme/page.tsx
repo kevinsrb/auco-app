@@ -47,7 +47,13 @@ const Aboutme = () => {
             <dt>
               <div
                 className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/374680/goals.svg" />
+                
+                <Image
+                  src="https://www.svgrepo.com/show/374680/goals.svg"
+                  alt="Picture of the user"
+                  width={30}
+                  height={30}
+                />
               </div>
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">
                 Aspiraciones profesionales
@@ -64,7 +70,13 @@ const Aboutme = () => {
             <dt>
               <div
                 className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <img src="https://www.svgrepo.com/show/483947/achievement-1.svg" alt='goals' />
+               
+                <Image
+                  src="https://www.svgrepo.com/show/483947/achievement-1.svg"
+                  alt="Picture of the user"
+                  width={30}
+                  height={30}
+                />
               </div>
               <p className="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">
                 Metas

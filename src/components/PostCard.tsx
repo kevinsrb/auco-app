@@ -1,6 +1,11 @@
+import { Post } from "@/interfaces/post.interface";
 import Link from "next/link";
 
-function PostCard({ post }) {
+interface Props {
+  post: Post
+}
+
+export const PostCard = ({ post }: Props) => {
   return (
     <Link key={post.id}
     className="bg-white flex flex-col justify-start p-6"
