@@ -17,7 +17,7 @@ export const CommentByPost = async ({ id }: Props) => {
                 {comments.map((comment: Comment) => (
                     
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col" key={comment.id}>
                         <div className="border rounded-md p-3 ml-3 my-3">
                             <div className="flex gap-3 items-center">
 
