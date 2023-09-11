@@ -90,7 +90,7 @@ const Aboutme = () => {
                 </li>
                 <li>
                   <strong>Mediano plazo: </strong>
-                 Quiero hacer mi casa propia.
+                  Quiero tener mi casa propia.
                 </li>
                 <li>
                   <strong>Largo plazo: </strong>

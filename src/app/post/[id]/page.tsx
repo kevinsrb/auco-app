@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 import { CommentByPost } from "@/components/CommentByPost";
 import { getAllPosts, getPostById } from "@/lib";
-import { Loading } from "@/components/loading";
+import { Loading } from "@/components/Loading";
 import { Post } from "@/interfaces/post.interface";
 import { PostCard } from "@/components/PostCard";
   
