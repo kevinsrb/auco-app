@@ -19,7 +19,7 @@ const PostPage = async ({params}: Props) => {
     <>
       <PostCard post={post} key={post.id} />
       <Suspense fallback={ <Loading />} >
-        <CommentByPost id={post.id}/>
+        <CommentByPost id={post.id} key={post.id}/>
       </Suspense>
     </>
   )
