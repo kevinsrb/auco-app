@@ -7,23 +7,25 @@ interface Props {
 
 export const PostCard = ({ post }: Props) => {
   return (
-    <Link key={post.id}
-    className="bg-white flex flex-col justify-start p-6"
-      href={`/post/${post.id}`}
-    >
-
-      <p className="text-blue-700 text-sm font-bold uppercase pb-4">Post</p>
-      <p className="text-3xl font-bold hover:text-gray-700 pb-4">
-        {post.title}
-      </p>
-
-      <p className="pb-6">
-        {post.body}
-      </p>
 
 
+    <Link href={`post/${post.id}`} className="p-4 max-w-sm  hover:bg-gray-300">
+   
+      <div className="flex rounded-lg h-full bg-white-400 p-8 flex-col">
+        <p className="text-blue-700 text-sm font-bold uppercase pb-4">Post</p>
+        <div className="flex items-center mb-3">
 
+          <h2 className="text-black text-lg font-medium"> {post.title}</h2>
+        </div>
+        <div className="flex flex-col justify-between flex-grow">
+          <p className="leading-relaxed text-base text-gray">
+            {post.body}
+          </p>
+        </div>
+      </div>
     </Link>
+
+
   );
 }
 

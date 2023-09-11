@@ -5,7 +5,7 @@ const  PostsPage  = async() => {
 
   const posts = await getAllPosts();
 
- return <div className="grid gap-4 grid-cols-4">
+ return <div className="flex flex-wrap justify-center mt-10">
     {posts.map(post => (
         <PostCard post={post} key={post.id} />
     ))}
